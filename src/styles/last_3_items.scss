@@ -1,0 +1,468 @@
+.last_items {
+  width: 1200px;
+  margin: auto;
+}
+
+.last_one {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 40px 50px;
+  border-radius: 45px;
+  margin: 150px 0;
+  .rasm_grp2 {
+    width: 50%;
+    height: auto;
+  }
+  .grp1 {
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+    width: 500px;
+    .back_green {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 18px;
+      padding: 3px 13px;
+      border-radius: 15px;
+      background-color: rgba(48, 224, 48, 0.678);
+    }
+    h3 {
+      font-size: 40px;
+    }
+    .txt {
+      font-size: 18px;
+    }
+    .airplane {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        border-radius: 25px;
+        border: 1px solid black;
+      }
+    }
+  }
+}
+
+.shablon_items {
+  margin: 100px 0;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  padding: 100px 0;
+  .black_card {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    background-color: #fff;
+    padding: 30px;
+    width: 50%;
+    border-radius: 25px;
+    border: 1px solid black;
+    button {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      border-radius: 25px;
+      font-size: 18px;
+      padding: 3px 13px;
+      border: none;
+      box-shadow: rgba(247, 201, 201, 0.35) -1px 2px 10px 4px;
+      background-color: rgba(48, 224, 48, 0.678);
+    }
+    h1 {
+      font-size: 43px;
+      color: #0f0f0f;
+    }
+    p {
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: #090909;
+      span {
+        border: 1px solid #090909;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        border-radius: 25px;
+      }
+    }
+  }
+  .black_card:hover {
+    box-shadow: rgba(165, 165, 165, 0.56) 0px 5px 35px 2px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 35%;
+    align-items: flex-start;
+    margin-top: 20px;
+    .card_1 {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      border: 1px solid black;
+      border-radius: 25px;
+      align-items: center;
+      padding: 25px;
+      width: 400px;
+      background-color: #fff;
+      .foiz {
+        font-size: 55px;
+        span {
+          font-size: 18px;
+        }
+      }
+      .text {
+        width: 45%;
+        font-size: 25px;
+        font-weight: 500;
+      }
+    }
+    .card_2 {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+      border: 1px solid black;
+      border-radius: 25px;
+      align-items: center;
+      padding: 20px;
+      width: 400px;
+      background-color: #ffec8d;
+      .foiz {
+        font-size: 55px;
+        span {
+          font-size: 18px;
+        }
+      }
+      .text {
+        font-size: 25px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.third {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 150px;
+  padding: 50px 100px;
+  width: 1190px;
+  margin: 100px auto;
+  h1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 48px;
+  }
+  h1:nth-child(2) {
+    text-align: right;
+    margin-left: 150px;
+    margin-bottom: 40px;
+  }
+  .foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      font-size: 20px;
+      width: 70%;
+    }
+    button {
+      padding: 5px 15px;
+      background-color: #090909;
+      color: #fff;
+      border-radius: 25px;
+      border: none;
+      font-size: 20px;
+    }
+  }
+}
+
+.third:hover {
+  box-shadow: rgba(165, 165, 165, 0.56) 0px 5px 35px 2px;
+}
+
+@media (max-width: 1410px) {
+  .last_items {
+    width: 90%;
+  }
+  .shablon_items {
+    justify-content: space-between;
+  }
+  .third {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .last_one {
+    position: relative;
+    .rasm_grp2 {
+      position: absolute;
+      z-index: 999;
+      opacity: 0.5;
+      width: 100%;
+      height: 70%;
+      object-fit: contain;
+      top: 20%;
+    }
+    .grp1 {
+      z-index: 1000;
+      width: 90%;
+    }
+  }
+
+  .third {
+    h1:nth-child(2) {
+      margin-left: 50px;
+    }
+  }
+
+  .shablon_items {
+    gap: 10px;
+    .black_card {
+      width: 50%;
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .cards {
+      align-items: flex-end;
+      margin-top: 20px;
+      justify-content: flex-end;
+      .card_1 {
+        font-size: 40px;
+        gap: 10px;
+        width: 250px;
+        padding: 15px;
+        .foiz {
+          font-size: 40px;
+        }
+        .text {
+          width: auto;
+        }
+      }
+      .card_2 {
+        font-size: 40px;
+        gap: 5px;
+        width: 250px;
+        padding: 15px;
+        .foiz {
+          font-size: 40px;
+        }
+        .text {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .third {
+    padding: 20px 50px;
+    border-radius: 25px;
+    h1 {
+      font-size: 35px;
+    }
+    h1:nth-child(2) {
+      margin-left: 0px;
+    }
+    .foot {
+      flex-direction: column;
+      gap: 30px;
+      align-items: flex-start;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .last_one {
+    padding: 20px 30px;
+    .rasm_grp2 {
+      height: 60%;
+      opacity: 0.2;
+    }
+    .grp1 {
+      width: 100%;
+      gap: 35px;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+      h3 {
+        font-size: 30px;
+      }
+      .txt {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .third {
+    width: 500px;
+  }
+
+  .shablon_items {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    .black_card {
+      width: 100%;
+    }
+    .cards {
+      width: 90%;
+      align-items: center;
+      justify-content: center;
+      .card_1 {
+        width: 250px;
+        margin: auto;
+        .foiz {
+          font-size: 30px;
+        }
+        .text {
+          font-size: 18px;
+        }
+      }
+      .card_2 {
+        width: 250px;
+        margin: auto;
+        flex-direction: row;
+        .foiz {
+          font-size: 30px;
+        }
+        .text {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:520px){
+  .third {
+    width: 100%;
+    h1{
+      gap: 5px;
+      font-size: 25px;
+    }
+    h1:nth-child(2) {
+      margin-bottom: 20px;
+    }
+    .foot{
+      p{
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 425px) {
+  .last_items {
+    width: 95%;
+  }
+  .last_one {
+    padding: 20px 30px;
+    .rasm_grp2 {
+      height: 60%;
+      opacity: 0.2;
+    }
+    .grp1 {
+      .back_green {
+        font-size: 16px;
+      }
+      .airplane {
+        gap: 10px;
+        font-size: 16px;
+        font-weight: 550;
+      }
+      h3 {
+        font-size: 20px;
+      }
+      .txt {
+        font-size: 15px;
+        font-weight: 450;
+      }
+    }
+  }
+  .shablon_items {
+    .black_card {
+      padding: 30px 10px;
+    }
+  }
+  .third {
+    width: 100%;
+    padding: 15px 20px;
+    h1{
+      gap: 5px;
+      font-size: 6vw;
+    }
+    h1:nth-child(2) {
+      margin-bottom: 20px;
+    }
+    .foot{
+      p{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .shablon_items {
+    gap: 30px;
+    .cards {
+      width: 90%;
+      margin: auto;
+      padding: 0;
+      .card_1 {
+        width: 100%;
+        .foiz {
+          font-size: 30px;
+        }
+        .text {
+          font-size: 18px;
+        }
+      }
+      .card_2 {
+        width: 100%;
+        flex-direction: row;
+        .foiz {
+          font-size: 30px;
+        }
+        .text {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

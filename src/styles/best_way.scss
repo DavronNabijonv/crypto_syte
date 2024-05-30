@@ -1,0 +1,310 @@
+.best_way {
+  width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.best_ttl {
+  width: 100%;
+  margin: 100px 0 50px 0;
+  padding-top: 50px;
+  p {
+    width: 50%;
+    font-size: 60px;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  p:nth-child(2) {
+    text-align: right;
+  }
+}
+
+.best_way_body {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  padding: 50px 30px;
+  .img_part {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 480px;
+      height: 650px;
+      border-radius: 100px;
+      object-fit: cover;
+    }
+  }
+}
+
+.another_part {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 50px;
+  gap: 38px;
+  .txt {
+    width: 380px;
+    font-size: 18px;
+  }
+  .download_btns {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+    .btns {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      border-radius: 16px;
+      background-color: #1a1921;
+      svg {
+        color: #fff;
+        font-size: 35px;
+      }
+      .txts {
+        p {
+          color: #fff;
+        }
+        p:nth-child(2) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .coins_cards {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    .bitcoin {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      padding: 15px;
+      border-radius: 25px;
+      .coin_head {
+        margin-bottom: 50px;
+        display: flex;
+        gap: 60px;
+        align-items: flex-start;
+        img {
+          width: 80px;
+        }
+        .kichik {
+          display: flex;
+          gap: 10px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            gap: 8px;
+            width: 80px;
+            padding: 2px 8px;
+            border-radius: 20px;
+            background-color: rgba(109, 108, 108, 0.679);
+          }
+          p:nth-child(2) {
+            background-color: pink;
+            padding: 2px 15px;
+            width: 100px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .bitcoin:nth-child(2) {
+      .coin_head {
+        margin-bottom: 30px;
+        img {
+          width: 70px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1410px) {
+  .best_way {
+    width: 90%;
+  }
+  .best_way_body {
+    justify-content: center;
+    gap: 0px;
+  }
+  .another_part {
+    .download_btns {
+      gap: 10px;
+    }
+    .coins_cards {
+      gap: 10px;
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .best_way_body {
+    padding-top: 0;
+    background-color: #fff;
+    border-radius: 30px;
+    .img_part {
+      display: none;
+    }
+  }
+  .another_part {
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+    position: relative;
+    .coins_cards {
+      position: absolute;
+      left: 65%;
+      margin: auto;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .best_ttl {
+    p {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 890px) {
+  .best_way_body {
+    padding: 30px 20px;
+  }
+  .another_part {
+    justify-content: start;
+    align-items: flex-start;
+    position: initial;
+    padding: 0;
+    margin-top: 10px;
+    .coins_cards {
+      position: initial;
+      flex-direction: row;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .best_ttl {
+    margin-top: 0px;
+    padding-top: 0;
+    p {
+      width: 100%;
+      font-size: 45px;
+    }
+    p:nth-child(2) {
+      text-align: left;
+    }
+  }
+  .another_part {
+    justify-content: center;
+    align-items: center;
+    .txt {
+      width: 90%;
+    }
+    .download_btns {
+      justify-content: center;
+    }
+    .coins_cards {
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .best_ttl {
+    p {
+      font-size: 10vw;
+      img{
+        width: 10vw;
+        height: 10vw;
+      }
+    }
+  }
+  .another_part {
+    justify-content: center;
+    align-items: center;
+    .txt {
+      width: 100%;
+    }
+    .download_btns {
+      justify-content: center;
+    }
+    .coins_cards {
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+}
+
+@media(max-width:320px){
+  .another_part {
+    justify-content: center;
+    align-items: center;
+    .txt {
+      width: 100%;
+      font-size: 5.2vw;
+    }
+    .download_btns {
+      margin-top: 0;
+      .btns{
+        gap: 5vw;
+        padding: 7vw;
+        svg{
+          font-size: 7vw;
+        }
+        .txts{
+          font-size: 4vw;
+        }
+      }
+    }
+    .coins_cards {
+      .bitcoin{
+        padding: 5vw;
+        .coin_head{
+          margin-bottom: 10vw;
+          gap: 12vw;
+          img{
+            width: 25vw;
+          }
+          .kichik{
+            gap: 3vw;
+            p{
+              font-size: 4.5vw;
+              width: 25vw;
+            }
+            p:nth-child(2) {
+              width: 28vw;
+            }
+          }
+        }
+      }
+      .bitcoin:nth-child(2) {
+        .coin_head {
+          margin-bottom: 12vw;
+          img {
+            width: 22vw;
+          }
+        }
+      }
+    }
+  }
+}
